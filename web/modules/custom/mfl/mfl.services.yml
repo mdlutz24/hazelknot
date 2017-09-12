@@ -1,0 +1,5 @@
+services:
+  mfl.apiclient:
+    class: Drupal\mfl\MFLAPIClientService
+    arguments: ['@http_client', '@config.factory']
+

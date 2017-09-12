@@ -1,0 +1,14 @@
+{
+  "name": "drupal/mfl",
+  "type": "drupal-module",
+  "description": "A Module to support a Flex Selector for fantasy football",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/mfl",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/mfl",
+    "source": "http://cgit.drupalcode.org/mfl"
+  },
+  "require": { }
+}

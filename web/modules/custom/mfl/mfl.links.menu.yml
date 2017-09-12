@@ -1,0 +1,21 @@
+mfl.mfl_settings_form:
+  title: 'MFL Flex Selector Settings'
+  route_name: mfl.mfl_settings_form
+  description: 'MFL Flex Selector Settings'
+  parent: system.admin_config_system
+  weight: 99
+
+
+# Player menu items definition
+entity.player.collection:
+  title: 'Player list'
+  route_name: entity.player.collection
+  description: 'List Player entities'
+  parent: system.admin_structure
+  weight: 100
+
+player.admin.structure.settings:
+  title: Player settings
+  description: 'Configure Player entities'
+  route_name: player.settings
+  parent: system.admin_structure

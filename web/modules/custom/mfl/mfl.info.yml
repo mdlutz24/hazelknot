@@ -1,0 +1,5 @@
+name: MFL Flex Selector
+type: module
+description: A Module to support a Flex Selector for fantasy football
+core: 8.x
+package: Custom

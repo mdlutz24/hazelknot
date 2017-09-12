@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains mfl.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mfl_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mfl module.
+    case 'help.page.mfl':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A Module to support a Flex Selector for fantasy football') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mfl_theme() {
+  return [
+    'mfl' => [
+      'render element' => 'children',
+    ],
+  ];
+}

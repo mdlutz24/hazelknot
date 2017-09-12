@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+dependencies:
+  enforced:
+    module:
+      - mfl
+name: 'NFL Teams'
+vid: nfl_teams
+description: 'A Taxonomy for NFL Teams'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,5 @@
+entity.player.add_form:
+  route_name: entity.player.add_form
+  title: 'Add Player'
+  appears_on:
+    - entity.player.collection

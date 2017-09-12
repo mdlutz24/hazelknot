@@ -1,0 +1,29 @@
+uuid: bf1b2ac1-0a1a-4a19-821b-e94f06fe32c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - mfl
+id: player.player.default
+targetEntityType: player
+bundle: player
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

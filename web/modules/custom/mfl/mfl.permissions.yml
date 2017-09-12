@@ -1,0 +1,33 @@
+add player entities:
+  title: 'Create new Player entities'
+
+administer player entities:
+  title: 'Administer Player entities'
+  description: 'Allow to access the administration form to configure Player entities.'
+  restrict access: true
+
+delete player entities:
+  title: 'Delete Player entities'
+
+edit player entities:
+  title: 'Edit Player entities'
+
+access player overview:
+  title: 'Access the Player overview page'
+
+view published player entities:
+  title: 'View published Player entities'
+
+view unpublished player entities:
+  title: 'View unpublished Player entities'
+
+view all player revisions:
+  title: 'View all Player revisions'
+
+revert all player revisions:
+  title: 'Revert all Player revisions'
+  description: 'Role requires permission <em>view Player revisions</em> and <em>edit rights</em> for player entities in question or <em>administer player entities</em>.'
+
+delete all player revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Player revisions</em> and <em>delete rights</em> for player entities in question or <em>administer player entities</em>.'
