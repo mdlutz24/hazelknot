@@ -10,6 +10,7 @@ services:
       MYSQL_PASSWORD: ch0c01a735auc3
     volumes:
       - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+      - database:/var/lib/mysql
 #      - /usr/local/mysql:/var/lib/mysql # I want to manage volumes manually.
 
   php:
@@ -29,10 +30,11 @@ services:
     environment:
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
       DB_HOST: mariadb
-      DB_USER: drupal
-      DB_PASSWORD: drupal
-      DB_NAME: drupal
+      DB_USER: hazelknot
+      DB_PASSWORD: ch0c01a735auc3
+      DB_NAME: hazelknot
       DB_DRIVER: mysql
+      DRUPAL_MODE: local
       PHP_XDEBUG: 1
       PHP_XDEBUG_DEFAULT_ENABLE: 1
       PHP_XDEBUG_REMOTE_CONNECT_BACK: 0         # This is needed to respect remote.host setting below
@@ -206,7 +208,8 @@ services:
 #    volumes:
 #      - /var/run/docker.sock:/var/run/docker.sock
 
-#volumes:
+volumes:
+  database:
 #  codebase:
 # Docker-sync for macOS users
 #  docker-sync:
